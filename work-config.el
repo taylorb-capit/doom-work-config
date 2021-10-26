@@ -1,6 +1,17 @@
 (after! org (setq
+             org-directory "~/Dropbox/Org"
   org-tag-alist '(("PROJECT" . ?p) ("QUESTION" . ?q) ("brewapp" . ?b)
                   ("webservice" . ?w) ("android" . ?a) ("kneedeep" . ?k))))
+
+(setq +org-base-path "~/Dropbox/org/")
+(setq +org-gtd-path +org-base-path)
+(setq +daypage-path (concat +org-base-path "days/"))
+(setq +org-wiki-path (concat +org-base-path "wiki/"))
+(setq +org-wiki-index (concat +org-wiki-path "index.org"))
+(setq +org-todo-file (concat +org-gtd-path "todo.org"))
+(setq +org-inbox-file (concat +org-gtd-path "inbox.org"))
+(setq +org-incubator-file (concat +org-gtd-path "incubator.org"))
+(setq +org-quotes-file (concat +org-wiki-path "personal/quotes.org"))
 
 (setq org-agenda-custom-commands
     '(
