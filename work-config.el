@@ -3,10 +3,10 @@
   org-tag-alist '(("PROJECT" . ?p) ("QUESTION" . ?q) ("brewapp" . ?b)
                   ("webservice" . ?w) ("android" . ?a) ("kneedeep" . ?k))))
 
-(setq +org-base-path "~/Dropbox/org/")
+(setq +org-base-path "~/Dropbox/Org/")
 (setq +org-gtd-path +org-base-path)
-(setq +daypage-path (concat +org-base-path "days/"))
-(setq +org-wiki-path (concat +org-base-path "wiki/"))
+(setq +daypage-path (concat +org-base-path "log/"))
+(setq +org-wiki-path (concat +org-base-path "notes/"))
 (setq +org-wiki-index (concat +org-wiki-path "index.org"))
 (setq +org-todo-file (concat +org-gtd-path "todo.org"))
 (setq +org-inbox-file (concat +org-gtd-path "inbox.org"))
