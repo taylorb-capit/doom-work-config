@@ -3,6 +3,11 @@
   org-tag-alist '(("PROJECT" . ?p) ("QUESTION" . ?q) ("brewapp" . ?b)
                   ("webservice" . ?w) ("android" . ?a) ("kneedeep" . ?k))))
 
+(after! org
+  (add-to-list 'org-capture-templates
+      '("b" "Bug" entry (file +org-todo-file)
+        "* BUG %?\n%U" :empty-lines 1)))
+
 (setq +org-base-path "~/Dropbox/Org/")
 (setq +org-gtd-path +org-base-path)
 (setq +daypage-path (concat +org-base-path "log/"))
